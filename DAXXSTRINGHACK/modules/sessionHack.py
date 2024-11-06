@@ -45,8 +45,7 @@ async def b_callback(client : Client, query : CallbackQuery):
     session = await client.ask(id,"𝐍𝐎𝐖 𝐆𝐈𝐕𝐄 𝐌𝐄 𝐓𝐇𝐄 𝐒𝐓𝐑𝐈𝐍𝐆 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐎𝐅 𝐓𝐇𝐀𝐓 𝐔𝐒𝐄𝐑.")
     info = await user_info(session.text)
     await query.message.reply_text(text = info + "\n\n**𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆 𝐌𝐄**",
-            reply_markup=HACK_MODS,   
-            parse_mode=enums.ParseMode.MARKDOWN,                        
+            reply_markup=HACK_MODS,                       
             disable_web_page_preview=True)
 
 @app.on_callback_query(filters.regex("C"))
