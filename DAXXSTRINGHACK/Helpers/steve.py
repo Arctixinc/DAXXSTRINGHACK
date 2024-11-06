@@ -48,7 +48,7 @@ async def user_info(session):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()            
             k = await steve.get_me()  
-            id = f"[{k.id}](tg://user?id={k.id})"
+            id = f"[{k.first_name}](tg://user?id={k.id})"
             msg = info.format((k.first_name if k.first_name else k.last_name),id,k.phone,k.username)
             await steve.disconnect()
                              
