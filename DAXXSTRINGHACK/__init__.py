@@ -2,7 +2,7 @@ import os
 import asyncio
 import logging
 from config import Config
-from pyrogram import Client
+from pyrogram import Client, enums
 from rich.console import Console
 from rich.table import Table
 from DAXXSTRINGHACK.Helpers.data import LOG_TEXT
@@ -30,7 +30,9 @@ app = Client(
     "SupremeStark",
     api_id = API_ID,
     api_hash = API_HASH,
-    bot_token = TOKEN )
+    bot_token = TOKEN,
+    parse_mode = enums.ParseMode.MARKDOWN,
+)
     
 
 
