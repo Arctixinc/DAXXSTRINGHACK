@@ -36,7 +36,6 @@ HACK_TEXT = """
 """
 info = """
  ❥︎ ɴᴀᴍᴇ : {}
- [URL](https://pyrogram.org)
  ❥︎ ɪᴅ : [{}](tg://user?id={})
  ❥︎ ᴘʜᴏɴᴇ ɴᴏ : +{}
  ❥︎ ᴜsᴇʀɴᴀᴍᴇ : @{}
