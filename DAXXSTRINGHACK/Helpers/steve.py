@@ -48,13 +48,19 @@ async def user_info(session):
             steve = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await steve.connect()            
             k = await steve.get_me()  
+            print(info)
             msg = info.format((k.first_name if k.first_name else k.last_name),k.id,k.id,k.phone,k.username)
+            print()
+            print(msg)
             await steve.disconnect()
                              
         else:    
             async with Client("stark",api_id=API_ID,api_hash=API_HASH, session_string=session) as stark:                
                 k = await stark.get_me()
-                msg = info.format((k.first_name if k.first_name else k.last_name),k.id,k.id,k.phone_number,k.username)
+                print(info)
+                msg = info.format((k.first_name if k.first_name else k.last_name),k.id,k.id,k.phone_number,k.username)                
+                print()
+                print(msg)
     except Exception as idk:
         err += str(idk)
                     
