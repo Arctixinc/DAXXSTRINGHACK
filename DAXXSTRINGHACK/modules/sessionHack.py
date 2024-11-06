@@ -46,6 +46,7 @@ async def b_callback(client : Client, query : CallbackQuery):
     info = await user_info(session.text)
     await query.message.reply_text(text = info + "\n\n**𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆 𝐌𝐄**",
             reply_markup=HACK_MODS,
+            parse_mode="markdown",                       
             disable_web_page_preview=True)
 
 @app.on_callback_query(filters.regex("C"))
