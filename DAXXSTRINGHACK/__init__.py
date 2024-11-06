@@ -31,7 +31,7 @@ app = Client(
     api_id = API_ID,
     api_hash = API_HASH,
     bot_token = TOKEN,
-    parse_mode = enums.ParseMode.DEFAULT,
+    parse_mode = enums.ParseMode.HTML,
 )
     
 
